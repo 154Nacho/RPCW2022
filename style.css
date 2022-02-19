@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(187, 250, 187);
+}
+
+/* Navigation Bar*/
+
+.navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 34, 0);
+}
+
+.navi ul li {
+    float: left;
+}
+
+.navi ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navi ul li a:hover {
+    background-color: #111;
+}
+
+/* Figure Jacaré */
+
+.polaroid image {
+    width: 100%;
+}
+
+.polaroid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    background-color: rgb(187, 250, 187);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+  
+.container {
+    background-color: rgb(0, 34, 0);
+    text-align: center;
+    padding: 5px 10px;
+    color:  white;
+}
+
+/* texto do site */
+
+.texto {
+    color: rgb(0, 34, 0);
+    text-align: justify;
+}
+
+/* video */
+
+.vid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* imagens alinhadas características */
+
+* {
+    box-sizing: border-box;
+}
+  
+.img-container {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.img-container img {
+    float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container2 {
+    text-align: center;
+    color: rgb(0, 34, 0);
+}
+
+/* tabela distribuição */
+
+#distribuicao {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#distribuicao td, #distribuicao th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#distribuicao tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#distribuicao tr:nth-child(odd){
+    background-color: rgba(0, 128, 0, 0.568);
+}
+  
+#distribuicao tr:hover {
+      background-color: gray;
+}
+  
+#distribuicao th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(0, 34, 0);
+    color: white;
+}
+
+/* Curiosidades */
+
+h2.curi {
+    color: rgb(0, 34, 0);
+    text-align: center;
+}
