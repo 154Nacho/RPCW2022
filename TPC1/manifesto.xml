@@ -24,27 +24,29 @@
         <p>Escolhi o tema Jacaré.</p>
     </resumo>
     <resultados>
-        <html>
-            <nome>index.html</home>
-            <nome>home.html</home>
-            <nome>caracteristicas.html</home>
-            <nome>distribuicao.html</home>
-            <nome>curious.html</home>
-        </html>
-        <css>
-            <nome>style.css</home>
-        </css>
-        <imagem>
-            <nome>crocodilo.jpeg</home>
-            <nome>jacare.jpeg</home>
-            <nome>jacare-acu.jpeg</home>
-            <nome>jacare-anao.jpeg</home>
-            <nome>jacaredistribuicao.png</home>
-            <nome>distribuicaoacu.png</home>
-            <nome>distribuicaoanao.png</home>
-        </imagem>
-        <video>
-            <nome>videoplayback.mp4</home>
-        </video>
+        <resultado>
+            <url>index.html</url>
+            <texto>Homepage</texto>
+        </resultado>
+        <resultado>
+            <url>home.html</url>
+            <texto>home</texto>
+        </resultado>
+        <resultado>
+            <url>caracteristicas.html</url>
+            <texto>caracteristicas</texto>
+        </resultado>
+        <resultado>
+            <url>distribuicao.html</url>
+            <texto>distribuicao geográfica</texto>
+        </resultado>
+        <resultado>
+            <url>curious.html</url>
+            <texto>curiosidades</texto>
+        </resultado>
+        <resultado>
+            <url>style.css</url>
+            <texto>Estilo da Página Web</texto>
+        </resultado>
     </resultados>
 </doc>
