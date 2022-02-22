@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifesto>
-    <metadata>
+<doc>
+    <meta>
         <titulo>TPC1 - Jacaré</titulo>
         <data>21 de fevereiro de 2022</data>
-        <autor>Pedro Miguel de Soveral Pacheco Barbosa</autor>
-        <uc>Representação e Processamento de Conhecimento na Web</uc>
-    </metadata>
+        <autor>
+        <id>PG47577</id>
+        <nome>Pedro Miguel de Soveral Pacheco Barbosa</nome>
+        </autor>
+        <uc>
+        <sigla>RPCW2022</sigla>
+        <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
     <resumo>
-        Este trabalho consistia em desenvolver uma página web simples sobre um dos seguintes temas:
-            -> Jacaré
-            -> Japão
-            -> Jarro
-            -> José
-            -> Janela
-        O intuito deste primeiro trabalho é começar a desenvolver as nossas capacidades de desenvolvimento Web,
-        bem como explorar ferramentas como o HTML, CSS, JavaScript.
-        Escolhi o tema Jacaré.
+        <p>Este trabalho consistia em desenvolver uma página web simples sobre um dos seguintes temas:</p>
+        <p>Jacaré</p>
+        <p>Japão</p>
+        <p>Jarro</p>    
+        <p>José</p>    
+        <p>Janela</p>    
+        <p>O intuito deste primeiro trabalho é começar a desenvolver as nossas capacidades de desenvolvimento Web,
+        bem como explorar ferramentas como o HTML, CSS, JavaScript.</p>  
+        <p>Escolhi o tema Jacaré.</p>
     </resumo>
     <resultados>
         <html>
@@ -41,4 +47,4 @@
             <nome>videoplayback.mp4</home>
         </video>
     </resultados>
-</manifesto>
+</doc>
