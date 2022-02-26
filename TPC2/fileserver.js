@@ -1,44 +1,78 @@
-const http = require("http")
-const url = require("url")
-const fs = require("fs")
+var http = require('http')
+var fs = require('fs')
 
-myserver = http.createServer( function(req,res) {
-    var myurl = url.parse(req.url,true).pathname
-    console.log("URL: " + myurl)
-    var file = myurl.substring(1)
-    var parts = myurl.split("/")
-    var path_to_file = './html/'
-    if(parts[1]=='filmes'){
-            if(parts.length==2){
-                file='filmes.html'
-            }else{
-                file=parts[2]+".html"
+http.createServer(function(req,res){
+    var myurl = req.url.substring()
+    console.log("URL -> " + myurl)
+    if(myurl == "/"){
+        console.log("\t->Home page requested")
+        fs.readFile("./html/index.html", function(err,data){
+            res.writeHead(200, {'Content-Type':'text/html'})
+            if(err){
+                res.write("<p>Erro na leitura do ficheiro</p>")
+            } else {
+                res.write(data)
             }
-        }
-    else if(parts[1]=='atores'){
-            if(parts.length==2){
-                file='atores.html'
-            }else{
-                file=parts[2]+".html"
+            res.end()
+        })
+    } else if(myurl == "/filmes"){
+        console.log("\t->Movies page requested")
+        fs.readFile("./html/filmes.html", function(err,data){
+            res.writeHead(200, {'Content-Type':'text/html'})
+            if(err){
+                res.write("<p>Erro na leitura do ficheiro</p>")
+            } else {
+                res.write(data)
             }
-        }
-    else{
-        file='index.html'
+            res.end()
+        })
+    } else if(myurl == "/atores"){
+        console.log("\t->Actors page requested")
+        fs.readFile("./html/atores.html", function(err,data){
+            res.writeHead(200, {'Content-Type':'text/html'})
+            if(err){
+                res.write("<p>Erro na leitura do ficheiro</p>")
+            } else {
+                res.write(data)
+            }
+            res.end()
+        })
+    } else if(myurl.includes("/filmes")){
+        var aux = myurl.substring(9)
+        console.log("\t\t->Movie " + aux + " page requested")
+        fs.readFile("./html/f" + aux + ".html", function(err,data){
+            res.writeHead(200, {'Content-Type':'text/html'})
+            if(err){
+                res.write("<p>Erro na leitura do ficheiro</p>")
+            } else {
+                res.write(data)
+            }
+            res.end()
+        })
+    } else if(myurl.includes("/atores")){
+        var aux = myurl.substring(9)
+        console.log("\t\t->Ator " + aux + " page requested")
+        fs.readFile("./html/a" + aux + ".html", function(err,data){
+            res.writeHead(200, {'Content-Type':'text/html'})
+            if(err){
+                res.write("<p>Erro na leitura do ficheiro</p>")
+            } else {
+                res.write(data)
+            }
+            res.end()
+        })
+    } else {
+        console.log("Bad page requested")
+        fs.readFile("./html/f" + aux + ".html", function(err,data){
+            res.writeHead(200, {'Content-Type':'text/html'})
+            if(err){
+                res.write("<p>Erro na leitura do ficheiro</p>")
+            } else {
+                res.write(data)
+            }
+            res.end()
+        })
     }
+}).listen(7777)
 
-    path_to_file += file;
-    console.log(path_to_file)
-    fs.readFile(path_to_file , function(err,data){
-        res.writeHead(200, {"Content-Type": "text/html; text/css; application/javascript"})
-        if(err){
-            console.log("ERRO -> " + err)
-            res.write("<p>Erro na leitura </p>")
-        }
-        else{
-            res.write(data)
-        }
-        res.end()
-    })
-})
-
-myserver.listen(7777)
+console.log("Servidor à escuta na porta 7777")
