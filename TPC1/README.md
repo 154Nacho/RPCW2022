@@ -1,2 +1,2 @@
 # RPCW2022
-Representação e Processamento de Conhecimento na Web
+TPC 1 da UC de RPCW
