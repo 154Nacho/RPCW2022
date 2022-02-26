@@ -59,7 +59,7 @@ def genHomePage() :
 
     homePage.write("</html>\n")
 
-def genMoviesPage(data) : 
+def genMoviesPage() : 
     moviesPage_path = "./html/filmes.html"
     moviesPage = open(moviesPage_path,"w")
     moviesPage.write("<!DOCTYPE html>\n")
@@ -88,10 +88,60 @@ def genMoviesPage(data) :
     moviesPage.write("\t\t\t<ol>\n")
 
     for item,values in movies.items() :
-        moviesPage.write("\t\t\t<li><a href=\"http://localhost:7777/filmes/f{values['ID']}\">{item}</a></li>")
+        moviesPage.write("\t\t\t<li><a href=\"http://localhost:7777/filmes/f" + {values['ID']} + "\">" + {item} + "</a></li>")
 
     moviesPage.write("\t\t\t<\ol>\n")
 
     moviesPage.write("\t</body>\n")
 
     moviesPage.write("</html>\n")
+
+def genEachMoviePage() :
+    for item,values in movies.items() :
+
+        fileName = "./html/f" + {values['ID']} + ".html"
+        f = open(fileName,"w")
+        
+        f.write("<!DOCTYPE html>\n")
+
+        f.write("<html lang=\"en\">\n")
+
+        f.write("\t<head>\n")
+
+        f.write("\t\t<title>Movies - " + {item} + "</title>\n")
+        f.write("\t\t<meta charset=\"UTF-8\">")
+        f.write("\t\t<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">")
+
+        f.write("\t</head>\n")
+
+        f.write("\t<body>\n")
+
+        f.write("\t\t<div class=\"w3-bar w3-center\">\n")
+        f.write("\t\t\t<h1>" + {item} + "</h1>\n")
+        f.write("\t\t</div>")
+
+        f.write("\t\t<div class=\"w3-container w3-margin-left\">\n")
+        f.write("\t\t\t<h3>Debut: " + {values['ano']} + "</h3>\n")
+        f.write("\t\t\t<h4>Cast:</h4>\n")
+        f.write("\t\t\t<ul>\n")
+
+        for actor in values['atores'] : 
+            f.write("\t\t\t\t<li><a href=\"http://localhost:7777/atores/a" + {actors[actor]['ID']} + "\">" + {actor} + "</a></li>\n")
+
+        f.write("\t\t\t</ul>\n")
+        f.write("\t\t\t<h4>Genre:</h4>\n")
+        f.write("\t\t\t<ul>\n")
+
+        for gen in values['genero'] :
+            f.write("\t\t\t\t<li>" + gen + "</li>\n")
+
+        f.write("\t\t\t</ul>\n")
+        f.write("\n\n</div>")
+
+        f.write("\t\t<div class=\"w3-container w3-margin-left w3-text-red\">\n")
+        f.write("\t\t\t<p><a href=\"http://localhost:7777/filmes\"><u>Back</u></a><p>\n")
+        f.write("\t\t</div>")
+
+        f.write("\t</body>\n")
+
+        f.write("</html>\n")
