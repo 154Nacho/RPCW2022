@@ -1,5 +1,7 @@
 import json
-import re
+import sys
+
+print(sys.setrecursionlimit(10000))
 
 file = open('cinemaATP.json',encoding='utf-8')
 
@@ -88,7 +90,7 @@ def genMoviesPage() :
     moviesPage.write("\t\t\t<ol>\n")
 
     for item,values in movies.items() :
-        moviesPage.write("\t\t\t<li><a href=\"http://localhost:7777/filmes/f" + {values['ID']} + "\">" + {item} + "</a></li>")
+        moviesPage.write("\t\t\t<li><a href=\"http://localhost:7777/filmes/f" + str(values['ID']) + "\">" + item + "</a></li>")
 
     moviesPage.write("\t\t\t<\ol>\n")
 
@@ -99,7 +101,7 @@ def genMoviesPage() :
 def genEachMoviePage() :
     for item,values in movies.items() :
 
-        fileName = "./html/f" + {values['ID']} + ".html"
+        fileName = "./html/f" + str(values['ID']) + ".html"
         f = open(fileName,"w")
         
         f.write("<!DOCTYPE html>\n")
@@ -108,7 +110,7 @@ def genEachMoviePage() :
 
         f.write("\t<head>\n")
 
-        f.write("\t\t<title>Movies - " + {item} + "</title>\n")
+        f.write("\t\t<title>Movies - " + str(item) + "</title>\n")
         f.write("\t\t<meta charset=\"UTF-8\">")
         f.write("\t\t<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">")
 
@@ -117,16 +119,16 @@ def genEachMoviePage() :
         f.write("\t<body>\n")
 
         f.write("\t\t<div class=\"w3-bar w3-center\">\n")
-        f.write("\t\t\t<h1>" + {item} + "</h1>\n")
+        f.write("\t\t\t<h1>" + str(item) + "</h1>\n")
         f.write("\t\t</div>")
 
         f.write("\t\t<div class=\"w3-container w3-margin-left\">\n")
-        f.write("\t\t\t<h3>Debut: " + {values['ano']} + "</h3>\n")
+        f.write("\t\t\t<h3>Debut: " + str(values['ano']) + "</h3>\n")
         f.write("\t\t\t<h4>Cast:</h4>\n")
         f.write("\t\t\t<ul>\n")
 
         for actor in values['atores'] : 
-            f.write("\t\t\t\t<li><a href=\"http://localhost:7777/atores/a" + {actors[actor]['ID']} + "\">" + {actor} + "</a></li>\n")
+            f.write("\t\t\t\t<li><a href=\"http://localhost:7777/atores/a" + str(actors[actor]['ID']) + "\">" + str(actor) + "</a></li>\n")
 
         f.write("\t\t\t</ul>\n")
         f.write("\t\t\t<h4>Genre:</h4>\n")
@@ -145,3 +147,82 @@ def genEachMoviePage() :
         f.write("\t</body>\n")
 
         f.write("</html>\n")
+
+def genActorsPage() :
+    actorsPage_path = "./html/atores.html"
+    actorsPage = open(actorsPage_path,"w")
+    actorsPage.write("<!DOCTYPE html>\n")
+
+    actorsPage.write("<html lang=\"en\">\n")
+
+    actorsPage.write("\t<head>\n")
+
+    actorsPage.write("\t\t<title>Actors</title>\n")
+    actorsPage.write("\t\t<meta charset=\"UTF-8\">")
+    actorsPage.write("\t\t<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">")
+
+    actorsPage.write("\t</head>\n")
+
+    actorsPage.write("\t<body>\n")
+
+    actorsPage.write("\t\t<div class=\"w3-bar w3-center\">\n")
+    actorsPage.write("\t\t\t<h1>Actors</h1>\n")
+    actorsPage.write("\t\t</div>\n")
+
+    actorsPage.write("\t\t<div class=\"w3-container w3-margin-left w3-text-red\">\n")
+    actorsPage.write("\t\t\t<p><a href=\"http://localhost:7777\"><u>Back</u></a><p>\n")
+    actorsPage.write("\t\t</div>")
+    
+    actorsPage.write("\t\t<div class=\"w3-container w3-margin-left\">\n")
+    actorsPage.write("\t\t\t<ol>\n")
+
+    for item,values in actors.items() :
+        actorsPage.write("\t\t\t<li><a href=\"http://localhost:7777/atores/a" + str(values['ID']) + "\">" + item + "</a></li>")
+        
+    actorsPage.write("\t\t\t<\ol>\n")
+
+    actorsPage.write("\t</body>\n")
+
+    actorsPage.write("</html>\n")
+
+def genEachActorPage() :
+    for item,values in actors.items() :
+        fileName = "./html/a" + str(values['ID']) + ".html"
+        f = open(fileName,"w")
+        f.write("<!DOCTYPE html>\n")
+
+        f.write("<html lang=\"en\">\n")
+
+        f.write("\t<head>\n")
+
+        f.write("\t\t<title>Actors - " + str(item) + "</title>\n")
+        f.write("\t\t<meta charset=\"UTF-8\">")
+        f.write("\t\t<link rel=\"stylesheet\" href=\"https://www.w3schools.com/w3css/4/w3.css\">")
+
+        f.write("\t</head>\n")
+        f.write("\t<body>\n")
+
+        f.write("\t\t<div class=\"w3-bar w3-center\">\n")
+        f.write("\t\t\t<h1>" + str(item) + "</h1>\n")
+        f.write("\t\t</div>\n")
+        f.write("\t\t<div class=\"w3-container w3-margin-left\">\n")
+        f.write("\t\t\t<ol>\n")
+
+        for movie in values['filmes'] :
+            f.write("\t\t\t<li><a href=\"http://localhost:7777/filmes/f" + str(movies[movie]['ID']) + "\">" + str(movie) + "</a></li>")
+
+        f.write("\t\t\t</ol>\n")
+
+        f.write("\t\t<div class=\"w3-container w3-margin-left w3-text-red\">\n")
+        f.write("\t\t\t<p><a href=\"http://localhost:7777/atores\"><u>Back</u></a><p>\n")
+        f.write("\t\t</div>")
+
+        f.write("\t</body>\n")
+
+        f.write("</html>\n")
+
+genHomePage()
+genMoviesPage()
+genActorsPage()
+genEachActorPage()
+genEachMoviePage()
