@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC2 - Movies and Actors</titulo>
+        <data>01 de março de 2022</data>
+        <autor>
+        <id>PG47577</id>
+        <nome>Pedro Miguel de Soveral Pacheco Barbosa</nome>
+        </autor>
+        <uc>
+        <sigla>RPCW2022</sigla>
+        <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este trabalho consistia no desenvolvimento de um Parser para um ficheiro JSON e de um servidor de ficheiros em NodeJS.</p>
+        <p>O principal objetivo deste tpc era a criação de páginas HTML que apresentassem a informação disponibilizada pelo dataset e consequente criação de um servidor de ficheiros que lida com os diferentes URLs e páginas HTML.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>cinemaATP.json</url>
+            <texto>Dataset de filmes e atores</texto>
+        </resultado>
+        <resultado>
+            <url>parserHTML.py</url>
+            <texto>Parser do dataset em Python</texto>
+        </resultado>
+        <resultado>
+            <url>fileserver.js</url>
+            <texto>Servidor de ficheiros em JavaScript</texto>
+        </resultado>
+    </resultados>
+</doc>
