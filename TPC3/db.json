@@ -2904,7 +2904,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I1",
-          "#text": "Clarinete"
+          "text": "Clarinete"
         }
       },
       {
@@ -2913,7 +2913,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I1",
-          "#text": "Clarinete"
+          "text": "Clarinete"
         }
       },
       {
@@ -2922,7 +2922,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I2",
-          "#text": "Contrabaixo"
+          "text": "Contrabaixo"
         }
       },
       {
@@ -2931,7 +2931,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I2",
-          "#text": "Contrabaixo"
+          "text": "Contrabaixo"
         }
       },
       {
@@ -2940,7 +2940,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I3",
-          "#text": "Corne Inglês"
+          "text": "Corne Inglês"
         }
       },
       {
@@ -2949,7 +2949,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I3",
-          "#text": "Corne Inglês"
+          "text": "Corne Inglês"
         }
       },
       {
@@ -2958,7 +2958,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I4",
-          "#text": "Eufónio"
+          "text": "Eufónio"
         }
       },
       {
@@ -2967,7 +2967,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I4",
-          "#text": "Eufónio"
+          "text": "Eufónio"
         }
       },
       {
@@ -2976,7 +2976,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I5",
-          "#text": "Fagote"
+          "text": "Fagote"
         }
       },
       {
@@ -2985,7 +2985,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I5",
-          "#text": "Fagote"
+          "text": "Fagote"
         }
       },
       {
@@ -2994,7 +2994,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I6",
-          "#text": "Flauta"
+          "text": "Flauta"
         }
       },
       {
@@ -3003,7 +3003,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I6",
-          "#text": "Flauta"
+          "text": "Flauta"
         }
       },
       {
@@ -3012,7 +3012,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I7",
-          "#text": "Fliscorne"
+          "text": "Fliscorne"
         }
       },
       {
@@ -3021,7 +3021,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I7",
-          "#text": "Fliscorne"
+          "text": "Fliscorne"
         }
       },
       {
@@ -3030,7 +3030,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I8",
-          "#text": "Guitarra"
+          "text": "Guitarra"
         }
       },
       {
@@ -3039,7 +3039,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I8",
-          "#text": "Guitarra"
+          "text": "Guitarra"
         }
       },
       {
@@ -3048,7 +3048,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I9",
-          "#text": "Harpa"
+          "text": "Harpa"
         }
       },
       {
@@ -3057,7 +3057,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I9",
-          "#text": "Harpa"
+          "text": "Harpa"
         }
       },
       {
@@ -3066,7 +3066,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I10",
-          "#text": "Oboé"
+          "text": "Oboé"
         }
       },
       {
@@ -3075,7 +3075,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I10",
-          "#text": "Oboé"
+          "text": "Oboé"
         }
       },
       {
@@ -3084,7 +3084,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I11",
-          "#text": "Orgão"
+          "text": "Orgão"
         }
       },
       {
@@ -3093,7 +3093,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I11",
-          "#text": "Orgão"
+          "text": "Orgão"
         }
       },
       {
@@ -3102,7 +3102,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I12",
-          "#text": "Percussão"
+          "text": "Percussão"
         }
       },
       {
@@ -3111,7 +3111,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I12",
-          "#text": "Percussão"
+          "text": "Percussão"
         }
       },
       {
@@ -3120,7 +3120,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I13",
-          "#text": "Piano"
+          "text": "Piano"
         }
       },
       {
@@ -3129,7 +3129,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I13",
-          "#text": "Piano"
+          "text": "Piano"
         }
       },
       {
@@ -3138,7 +3138,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I14",
-          "#text": "Saxofone"
+          "text": "Saxofone"
         }
       },
       {
@@ -3147,7 +3147,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I14",
-          "#text": "Saxofone"
+          "text": "Saxofone"
         }
       },
       {
@@ -3156,7 +3156,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I15",
-          "#text": "Trombone"
+          "text": "Trombone"
         }
       },
       {
@@ -3165,7 +3165,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I15",
-          "#text": "Trombone"
+          "text": "Trombone"
         }
       },
       {
@@ -3174,7 +3174,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I16",
-          "#text": "Trompa"
+          "text": "Trompa"
         }
       },
       {
@@ -3183,7 +3183,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I16",
-          "#text": "Trompa"
+          "text": "Trompa"
         }
       },
       {
@@ -3192,7 +3192,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I17",
-          "#text": "Trompete"
+          "text": "Trompete"
         }
       },
       {
@@ -3201,7 +3201,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I17",
-          "#text": "Trompete"
+          "text": "Trompete"
         }
       },
       {
@@ -3210,7 +3210,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I18",
-          "#text": "Tuba"
+          "text": "Tuba"
         }
       },
       {
@@ -3219,7 +3219,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I18",
-          "#text": "Tuba"
+          "text": "Tuba"
         }
       },
       {
@@ -3228,7 +3228,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I19",
-          "#text": "Violoncelo"
+          "text": "Violoncelo"
         }
       },
       {
@@ -3237,7 +3237,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I19",
-          "#text": "Violoncelo"
+          "text": "Violoncelo"
         }
       },
       {
@@ -3246,7 +3246,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I20",
-          "#text": "Violino"
+          "text": "Violino"
         }
       },
       {
@@ -3255,7 +3255,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I20",
-          "#text": "Violino"
+          "text": "Violino"
         }
       },
       {
@@ -3264,7 +3264,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I21",
-          "#text": "Viola de Arco"
+          "text": "Viola de Arco"
         }
       },
       {
@@ -3273,7 +3273,7 @@
         "duracao": "3",
         "instrumento": {
           "id": "I21",
-          "#text": "Viola de Arco"
+          "text": "Viola de Arco"
         }
       },
       {
@@ -3282,7 +3282,7 @@
         "duracao": "5",
         "instrumento": {
           "id": "I22",
-          "#text": "Bandolim"
+          "text": "Bandolim"
         }
       },
       {
@@ -3291,98 +3291,98 @@
         "duracao": "3",
         "instrumento": {
           "id": "I22",
-          "#text": "Bandolim"
+          "text": "Bandolim"
         }
       }
     ],
     "instrumentos": [
       {
         "id": "I1",
-        "#text": "Clarinete"
+        "text": "Clarinete"
       },
       {
         "id": "I2",
-        "#text": "Contrabaixo"
+        "text": "Contrabaixo"
       },
       {
         "id": "I3",
-        "#text": "Corne Inglês"
+        "text": "Corne Inglês"
       },
       {
         "id": "I4",
-        "#text": "Eufónio"
+        "text": "Eufónio"
       },
       {
         "id": "I5",
-        "#text": "Fagote"
+        "text": "Fagote"
       },
       {
         "id": "I6",
-        "#text": "Flauta"
+        "text": "Flauta"
       },
       {
         "id": "I7",
-        "#text": "Fliscorne"
+        "text": "Fliscorne"
       },
       {
         "id": "I8",
-        "#text": "Guitarra"
+        "text": "Guitarra"
       },
       {
         "id": "I9",
-        "#text": "Harpa"
+        "text": "Harpa"
       },
       {
         "id": "I10",
-        "#text": "Oboé"
+        "text": "Oboé"
       },
       {
         "id": "I11",
-        "#text": "Orgão"
+        "text": "Orgão"
       },
       {
         "id": "I12",
-        "#text": "Percussão"
+        "text": "Percussão"
       },
       {
         "id": "I13",
-        "#text": "Piano"
+        "text": "Piano"
       },
       {
         "id": "I14",
-        "#text": "Saxofone"
+        "text": "Saxofone"
       },
       {
         "id": "I15",
-        "#text": "Trombone"
+        "text": "Trombone"
       },
       {
         "id": "I16",
-        "#text": "Trompa"
+        "text": "Trompa"
       },
       {
         "id": "I17",
-        "#text": "Trompete"
+        "text": "Trompete"
       },
       {
         "id": "I18",
-        "#text": "Tuba"
+        "text": "Tuba"
       },
       {
         "id": "I19",
-        "#text": "Violoncelo"
+        "text": "Violoncelo"
       },
       {
         "id": "I20",
-        "#text": "Violino"
+        "text": "Violino"
       },
       {
         "id": "I21",
-        "#text": "Viola de Arco"
+        "text": "Viola de Arco"
       },
       {
         "id": "I22",
-        "#text": "Bandolim"
+        "text": "Bandolim"
       }
     ]
   }
