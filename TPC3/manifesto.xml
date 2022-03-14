@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC3</titulo>
+        <data>15 de março de 2022</data>
+        <autor>
+        <id>PG47577</id>
+        <nome>Pedro Miguel de Soveral Pacheco Barbosa</nome>
+        </autor>
+        <uc>
+        <sigla>RPCW2022</sigla>
+        <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este TPC consiste em Redireciomento de links, através da utilização correta do axios para pôr em prática "gets" de forma a ir buscar informação de um ficheiro json e apresenta-la em diversas páginas html.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>db.json</url>
+            <texto>Dataset de uma escola de música</texto>
+        </resultado>
+        <resultado>
+            <url>fileserver.js</url>
+            <texto>Servidor de ficheiros em JavaScript</texto>
+        </resultado>
+    </resultados>
+</doc>
