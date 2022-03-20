@@ -1,0 +1,16 @@
+{
+  "name": "tpc4",
+  "version": "1.0.0",
+  "description": "tpc4 RPCW2022",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "author": "PedroBarbosa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "nodemon": "^2.0.15"
+  }
+}
