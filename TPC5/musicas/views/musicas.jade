@@ -1,0 +1,18 @@
+extends layout 
+
+block content  
+  h1.w3-center Lista de Músicas
+  h2.w3-left
+    a(href="/musicas/insert") Inserir Nova Música
+  table.w3-table-all
+    tr.w3-light-blue
+        th.w3-center Identificador
+        th.w3-center Título
+        th.w3-center Província
+    each m in musicas
+        tr
+            td.w3-center
+              a(href="/musicas/#{m.id}")= m.id 
+            td.w3-center= m.tit
+            td.w3-center
+             a(href="/musicas/prov/#{m.prov}")= m.prov
