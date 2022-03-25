@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC5 - Lista de Músicas</titulo>
+        <data>29 de março de 2022</data>
+        <autor>
+        <id>PG47577</id>
+        <nome>Pedro Miguel de Soveral Pacheco Barbosa</nome>
+        </autor>
+        <uc>
+        <sigla>RPCW2022</sigla>
+        <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Este TPC consiste em conceber uma página app de músicas através de Expresse de um ficheiro json com a informação.</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>arq-son.json</url>
+            <texto>Dataset de músicas</texto>
+        </resultado>
+        <resultado>
+            <url>app.js</url>
+            <texto>Faz a ligação entre API e os pedidos dos clientes</texto>
+        </resultado>
+        <resultado>
+            <url>statics.js</url>
+            <texto>Recursos Estáticos</texto>
+        </resultado>
+    </resultados>
+</doc>
