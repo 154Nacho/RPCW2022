@@ -1,5 +1,16 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block content  
+  h1.w3-left  Lista de Classes Nível 1
+  h2.w3-right 
+      b Quantidade: 
+      = q 
+  table.w3-table-all
+    tr.w3-light-blue
+        th.w3-center Título
+        th.w3-center Código
+    each c in cs
+        tr
+            td.w3-center= c.titulo
+            td.w3-center
+             a(href="http://localhost:3009/classes/" + c.codigo)= c.codigo
